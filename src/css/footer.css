@@ -1,0 +1,92 @@
+.content_footer {
+    background-color: rgb(255, 255, 255);
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.footer_social {
+    padding-top: 10px;
+}
+
+.social_ul li img {
+    width: 30px;
+    object-fit: cover;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 20;
+    padding-right: 180px;
+    background-color: rgb(255, 255, 255);
+}
+
+.social_ul li:first-child {
+    padding: 14px 0px;
+}
+
+.social_ul li p {
+    align-self: center;
+    display: inline-block;
+    padding-left: 7px;
+    color: black;
+    text-shadow: none;
+}
+
+.small {
+    font-size: 9px;
+}
+
+.social_ul li {
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.social_ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    padding-left: 7px;
+    position: absolute;
+}
+
+.footer_copyright img {
+    width: 100%;
+    height: 100px;
+}
+
+.copyr {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    text-align: justify;
+    color: #525050;
+}
+
+.footer_copyright {
+    display: flex;
+}
+
+.image_copy img {
+    width: 100px;
+    height: 175px;
+    padding-right: 13px;
+}
+
+.footer_nav_text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.footer_nav {
+    margin-left: 20px;
+}
+
+.footer_nav_estruc li {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding: 5px 1px;
+}

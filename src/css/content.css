@@ -1,0 +1,70 @@
+.content_main {
+    background-color: rgb(52, 78, 90);
+    grid-area: div;
+    background: url(/src/img/background.jpg);
+}
+
+.content_body {
+    background: rgba(255,255,255,0.9);
+    box-shadow: 2px 2px 10px;
+    width: 90vw;
+    height: 60vh;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+/* Section HOME*/
+
+.cube_into img {
+    transform: rotate(50deg);
+    margin-top: 150px;
+}
+
+.home_text h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: rgb(55, 117, 55);
+}
+
+.body_home {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home_text {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.home_frame {
+    margin-left: 180px;
+    margin-top: -300px;
+}
+
+.frame_cube {
+    background-color: rgb(103, 121, 74);
+    width: 400px;
+    height: 700px;
+    transform: rotate(-10deg);
+    border-radius: 150px;
+    
+}
+
+.cube_into {
+    background-color: rgb(131, 173, 62);
+    width: 700px;
+    height: 700px;
+    transform: rotate(-40deg);
+    border-radius: 150px;
+    position: relative;
+}
+
+.div_p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color: #555;
+    text-align: justify;
+}
