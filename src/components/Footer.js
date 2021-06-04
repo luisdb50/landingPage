@@ -41,7 +41,7 @@ export function Footer(){
                     </li>
                     <li className="ul_tli">
                         <p className="small">luisdanieldb4@gmail.com</p>
-                        <img onClick={()=> active(3)} alt="mail" src="http://assets.stickpng.com/images/5847fafdcef1014c0b5e48ce.png" />
+                        <img onClick={()=> active(3)} alt="mail" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" />
                     </li>
                 </ul>
             </div>
