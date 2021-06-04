@@ -1,0 +1,81 @@
+li p {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-shadow: 2px 2px 1px #000;
+    transition: 0.5s;
+    z-index: 20;
+    cursor: pointer;
+}
+
+li p:hover {
+    color: rgb(255, 255, 0);
+}
+
+.nav_ul li img:hover {
+    margin-left: 80px;
+    margin-top: -15px;
+    width: 85px;
+}
+
+.nav_ul li img {
+    position: relative;
+    width: 75px;
+    margin-left: 60px;
+    margin-top: -15px;
+    object-position: initial;
+    transition: 0.5s;
+}
+
+.header_logo img {
+    width: 250px;
+    margin-left: 5%;
+}
+
+.nav_ul li {
+    list-style: none;
+    margin-top: 25px;
+    padding: 10px;
+    background: rgb(79, 113, 175);
+    box-shadow: 2px 2px 6px;
+    overflow: hidden;
+    width: 130px;
+    height: 20px;
+    
+}
+
+.div_content {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 15fr 4fr;
+    grid-template-areas:
+    "header header header"
+    "div div div"
+    "footer footer footer"
+}
+
+.content_header {
+    background-color: aquamarine;
+    grid-area: header;
+    display: flex;
+    background: url(https://media.istockphoto.com/vectors/pixel-minecraft-style-land-block-background-concept-of-game-ground-vector-id1300167320?k=6&m=1300167320&s=612x612&w=0&h=CntUJHpTW9Xx801p0PlOU3-MTcOeywlZw3C4dOddu3k=) repeat;
+    background-size: 50px;
+    box-shadow: 1px 1px 8px;
+    z-index: 10;
+}
+
+.header_nav {
+    width: 70%;
+}
+
+.header_logo {
+    width: 30%;
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    
+}
