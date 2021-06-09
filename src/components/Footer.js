@@ -4,6 +4,10 @@ import "../css/footer.css"
 
 import creeper from "../img/footer_1.gif"
 import piglin from "../img/footer_2.gif"
+import face_logo from "../img/face_logo.png"
+import mobile_logo from "../img/mobile_logo.png"
+import mail_logo from "../img/mail_logo.png"
+import mojang_logo from "../img/mojang_logo.png"
 
 export function Footer(){
 
@@ -22,8 +26,6 @@ export function Footer(){
         } 
     }
 
-
-
     return(
 
         <footer className="content_footer">
@@ -33,15 +35,15 @@ export function Footer(){
                     <li className="title_1">Diseñador de la pagina</li>
                     <li className="ul_fli">
                         <a href="https://www.facebook.com/davilaluisdaniel5018/">Luis Daniel Davila</a>
-                        <img onClick={()=> active(1)} alt="facebook" src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-2-1.png" />
+                        <img onClick={()=> active(1)} alt="facebook" src={face_logo} />
                     </li>
                     <li className="ul_sli">
                         <p>+5804163670629</p>
-                        <img onClick={()=> active(2)} alt="whatsapp" src="http://www.alas2017.com/wp-content/uploads/2017/09/Mobile-Smartphone-icon1.png" />
+                        <img onClick={()=> active(2)} alt="whatsapp" src={mobile_logo} />
                     </li>
                     <li className="ul_tli">
                         <p className="small">luisdanieldb4@gmail.com</p>
-                        <img onClick={()=> active(3)} alt="mail" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" />
+                        <img onClick={()=> active(3)} alt="mail" src={mail_logo} />
                     </li>
                 </ul>
             </div>
@@ -51,10 +53,10 @@ export function Footer(){
                     <img alt="creeper" src={creeper} />
                 </div>
                 <div className="info_copy">
-                    <img alt="logo_mojang" src="https://1000logos.net/wp-content/uploads/2020/09/Mojang-logo.png" />
+                    <img alt="logo_mojang" src={mojang_logo} />
                     <p className="copyr">
                         Los recursos multimedia usados para realizar esta pagina contienen 
-                        derechos de autor. Y son utilizados sin fines lucrativos. No se 
+                        derechos de autor ajenos. Y son utilizados sin fines lucrativos. No se 
                         obtiene ningun beneficio economico con los mismos
                     </p>
                 </div>

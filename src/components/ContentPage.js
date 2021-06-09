@@ -1,6 +1,6 @@
 import React from "react"
 
-import "../css/header.css"
+import "../css/contentPage.css"
 
 import steve_icon from "../img/home_icon.png"
 import about_icon from "../img/about_icon.png"
@@ -11,7 +11,8 @@ import down_icon from "../img/down_icon.png"
 import {Content} from "./Content"
 import {Footer} from "./Footer"
 
-export class Header extends React.Component{
+export class ContentPage extends React.Component{
+    
     constructor(props){
         super(props);
         this.state = {
@@ -63,7 +64,7 @@ export class Header extends React.Component{
                         </ul>
                     </nav>
                 </header>
-
+                
                 <Content pag={this.state.print} />
                 <Footer />
             </div>

@@ -2,16 +2,15 @@
     background-color: rgb(52, 78, 90);
     grid-area: div;
     background: url(/src/img/background.jpg);
+    background-attachment: fixed;
 }
 
 .content_body {
     background: rgba(255,255,255,0.9);
     box-shadow: 2px 2px 10px;
     width: 90vw;
-    height: 60vh;
     margin: 0 auto;
     overflow: hidden;
-    
 }
 
 /* Section HOME*/
@@ -63,8 +62,114 @@
 }
 
 .div_p {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
-    color: #555;
+    font-family: 'Doland-Regular', cursive;
+    font-size: 18px;
+    color: rgb(53, 53, 53);
     text-align: justify;
+}
+
+/* Section ABOUT*/
+
+.content_modes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    justify-items: center;
+}
+
+.content_modes div img {
+    margin: 0 auto;
+}
+
+.modes_normal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 20px;
+    
+}
+
+.modes_dungeons {
+    margin-top: 30px;
+    margin: 20px;
+    
+}
+
+.modes_earth {
+    margin-top: 30px;
+    margin: 20px;
+    
+}
+
+.modes_story {
+    margin-top: 30px;
+    margin: 20px;
+    grid-column: 2;
+}
+
+.p_styled {
+    font-family: 'Doland-Regular';
+    font-size: 18px;
+    color: rgb(78, 73, 73);
+    margin: 20px;
+    text-align: justify;
+}
+
+.modes_img {
+    width: 100%;
+    display: grid;
+    margin: 10px;
+}
+
+.title {
+    margin: 50px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: rgb(90, 145, 76);
+    word-spacing: -5px;
+    
+    
+}
+
+.c_img {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.plataforms_table {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(5,1fr);
+    width: 90%;
+
+}
+
+.e {
+    border-bottom: solid rgb(148, 148, 148);
+    display: grid;
+    justify-items: center;
+}
+
+.E {
+    border-bottom: solid rgb(148, 148, 148);
+    display: grid;
+    justify-items: center;
+}
+
+.E img {
+    width: 30px;
+    padding: 10px 0;
+}
+
+.e img {
+    width: 100px;
+    height:35px;
+    padding: 10px 0;
+}
+
+.content_plataforms {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 100px;
 }
