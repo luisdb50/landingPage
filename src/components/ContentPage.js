@@ -4,8 +4,7 @@ import "../css/contentPage.css"
 
 import steve_icon from "../img/home_icon.png"
 import about_icon from "../img/about_icon.png"
-import info_icon from "../img/info_icon.png"
-import contact_icon from "../img/contact_icon.gif"
+import info_icon from "../img/contact_icon.gif"
 import down_icon from "../img/down_icon.png"
 
 import {Content} from "./Content"
@@ -48,18 +47,13 @@ export class ContentPage extends React.Component{
                             </li>
 
                             <li>
-                                <p onClick={()=> this.action("info")}>INFORMACION</p>
-                                <img alt="icono" src={info_icon} />
-                            </li>
-
-                            <li>
                                 <p onClick={()=> this.action("down")}>DESCARGAR</p>
                                 <img alt="icono" src={down_icon} />
                             </li>
 
                             <li>
-                                <p onClick={()=> this.action("cont")}>CONTACTO</p>
-                                <img alt="icono" src={contact_icon} />
+                                <p onClick={()=> this.action("info")}>INFORMACION</p>
+                                <img alt="icono" src={info_icon} />
                             </li>
                         </ul>
                     </nav>

@@ -1,5 +1,6 @@
 import React from "react";
 import {Slider} from "../components/Slider"
+import {DownContent} from "../components/DownContent"
 
 import steve_icon from "../img/home_icon.png"
 import img_1 from "../img/slider_1.webp"
@@ -20,6 +21,14 @@ import switch_logo from "../img/switch_logo.png"
 import xbox_logo from "../img/xbox_logo.png"
 import check from "../img/check.png"
 import cross from "../img/cross.png"
+import profile from "../img/profile.jpg"
+import unefa_logo1 from "../img/unefa_logo1.png"
+import unefa_logo2 from "../img/unefa_logo2.png"
+import programing from "../img/programing.png"
+import back_1 from "../img/background_normal.jpg"
+import back_2 from "../img/background_normal2.jpg"
+import back_3 from "../img/background_normal3.jpg"
+import back_4 from "../img/background_normal4.jpg"
 
 import "../css/content.css"
 
@@ -88,12 +97,16 @@ function About(){
     const url2= img_2;
     const url3= img_3;
     const url4= img_4;
+    
 
     return(
 
         <div className="body_about">
             <div className="about_slider">
-                <Slider src1={url1} src2={url2} src3={url3} src4={url4} timer={5000}/>
+                <Slider 
+                    sources={[url1, url2, url3, url4]} 
+                    timer={5000}
+                />
             </div>
             <h1 className="title">Videojuegos de Minecraft</h1>
             <div className="content_modes">
@@ -205,12 +218,170 @@ function About(){
 
 function Information(){
 
+    return(
+
+        <div className="body_information">
+            <h1 className="title">Informacion del creador de la pagina</h1>
+            <div className="info_file">
+                <img alt="perfil" src={profile} />
+                <div className="file_data">
+                    <div><p className="p_styled2">Nombres :</p><p className="p_res">Luis Daniel</p></div>
+                    <div><p className="p_styled2">Correo :</p><p className="p_res">luisdanieldb4@gmail.com</p></div>
+                    <div><p className="p_styled2">Apellidos :</p><p className="p_res">Davila Briceño</p></div>
+                    <div><p className="p_styled2">Telefono :</p><p className="p_res">+584160857869</p></div>
+                    <div><p className="p_styled2">Edad :</p><p className="p_res">20</p></div>
+                    <div><p className="p_styled2">Pais :</p><p className="p_res">Venezuela</p></div>
+                    <div><p className="p_styled2">Fecha nac. :</p><p className="p_res">18/04/2001</p></div>
+                    <div><p className="p_styled2">Estado:</p><p className="p_res">Merida</p></div>
+                    <div><p className="p_styled2">Estado nac. :</p><p className="p_res">Tachira</p></div>
+                    <div><p className="p_styled2">Cuidad:</p><p className="p_res">Ejido</p></div>
+                    <div><p className="p_styled2">Ciudad nac. :</p><p className="p_res">San Cristobal</p></div>
+                    <div><p className="p_styled2">Profesion :</p><p className="p_res">Estudiante</p></div>
+                </div>
+            </div>
+            <div className="info_study">
+                <div className="study_text">
+                    <h2 className="sub_title">Estudios</h2>
+                    <p className="p_styled">
+                        Estudios de bachillerato fueron en el Liceo Militar General en jefe Rafael Urdaneta, y los
+                        universitarios en la Universidad Nacional Experimental Politécnica de la Fuerza Armada cursando
+                        la carrera de Ingenieria de Sistemas actualmente.
+                    </p>
+                </div>
+                <div className="study_image">
+                    <img alt="unefa_logo1" src={unefa_logo1} />
+                    <img alt="unefa_logo2" src={unefa_logo2} />
+                </div>
+            </div>
+            <div className="info_study">
+                
+                <div className="study_image">
+                    <img className="config_img" alt="programing" src={programing} />
+                </div>
+                <div className="study_text">
+                    <h2 className="sub_title">Descripcion</h2>
+                    <p className="p_styled">
+                        Desde hace mas de 5 años he estado estudiando programacion mediante internet y cursos en linea, 
+                        me he dedicado al diseño grafico, modelado 3d, reparacion de equipos electronicos y computadoras
+                        para conocer un poco de cada una. En el area de programacion conozco Java basico, HTML, CSS, JS 
+                        y React. Aun sigo aprendiendo cadavez mas. Con los conocimientos actuales
+                        soy capaz de crear esta pagina web, y aun sigo estudiando asi que las proximas paginas seran
+                        mucho mas avanzadas. 10/06/21 
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 function Download(){
+    
+    const url1= back_1;
+    const url2= back_2;
+    const url3= back_3;
+    const url4= back_4;
 
+    let jsx1 =
+            <div className="content_textSlider">
+                
+                <div className="textSlider_img">
+                    <img alt="normal_logo" src={normal_logo} />
+                </div>
+                <div className="textSlider_txt">
+                    <p>
+                        "Prepárate para una aventura de posibilidades ilimitadas mientras construyes, 
+                        extraes, combates criaturas y exploras el cambiante paisaje de Minecraft."
+                        <br />
+                        <br />
+                        para Linux, Windows, Adroid, IOS, XBOX ONE, XBOX 360, Nintendo Switch, PS4, 
+                        PS3, PSVITA, WIIU, Nintendo 3DS, Amazon fire y Oculus. 
+                    </p>
+                    <br />
+                    <p>
+                        Descarga minecraft desde la pagina oficial presionando el boton
+                    </p>
+                    <br />
+                    <div className="textSlider_btn">
+                        <a href="https://www.minecraft.net/es-es/about-minecraft">Descargar</a>
+                    </div>
+                </div>
+            </div>
+
+    let jsx2 =     
+        <div className="content_textSlider">
+            <div className="textSlider_img">
+                <img alt="dungueons_logo" src={dungeons_logo} />
+            </div>
+            <div className="textSlider_txt">
+                <p>
+                    "Un juego de accion y aventura completamente nuevo, inspirado en los clasicos
+                    juegos de mazmorras y ambientado en el universo de Minecraft"
+                    <br />
+                    <br />
+                    "Forma equipo con tus amigos en consolas y PC con la nueva actualizacion de partidas
+                    entre distintas plataformas. "para Windows, XBOX ONE, Nintendo Switch, PS4.
+                </p>
+                <br />
+                <p>
+                    Descarga minecraft desde la pagina oficial presionando el boton
+                </p>
+                <br />
+                <div className="textSlider_btn">
+                    <a href="https://www.minecraft.net/es-es/about-dungeons">Descargar</a>
+                </div>
+            </div>
+        </div>
+    
+    let jsx3 =       
+        <div className="content_textSlider">
+            <div className="textSlider_img">
+                <img alt="earth_logo" src={earth_logo} />
+            </div>
+            <div className="textSlider_txt">
+                <p>
+                    "Después de una larga espera, Minecraft Earth, la nueva dimensión del juego 
+                    más jugado de la historia, ya está disponible en España. Esta innovación de 
+                    Minecraft utiliza la tecnología de realidad aumentada para colocar el mundo 
+                    de Minecraft en el mundo real.
+                    Justo como en Minecraft, en Minecraft Earth puedes unirte a una comunidad de
+                    constructores y exploradores de todo el planeta para explorar y sobrevivir 
+                    juntos en el mundo."
+                </p>
+                <div className="textSlider_btn">
+                    <a href="https://www.minecraft.net/es-es/about-minecraft">Descargar</a>
+                </div>
+            </div>
+        </div>
+    
+    let jsx4 =        
+        <div className="content_textSlider">
+            <div className="textSlider_img">
+                <img alt="story_logo" src={story_logo} />
+            </div>
+            <div className="textSlider_txt">
+                <p>
+                    Minecraft: Story Mode fue una serie animada interactiva desarrollada y publicada 
+                    por Telltale Games. Está basado en el videojuego Minecraft. Es un videojuego 
+                    gráfico de aventura similar a otros juegos de Telltale Games, lanzado como una 
+                    serie de episodios.. 
+                    <br />
+                    <br />
+                    ACTUALMENTE NO SE ENCUENTRA DISPONIBLE
+                </p>
+                <br />
+                <br />
+            </div>
+        </div>
+
+    return(
+        <DownContent jsx={[jsx1, jsx2, jsx3, jsx4]} urls={[url1, url2, url3, url4]}/>
+    );
 }
 
 function Contact(){
+    return(
+        <div className="body_contact">
 
+        </div>
+    );
 }
